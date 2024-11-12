@@ -7,6 +7,12 @@ function sortear() {
         alert('Insira um intervalo');
         return; //não retorna nada, mas tem o papel de interromper a função nesse ponto
     }
+
+    if (quantidade > (ateNumero - doNumero + 1)){   //Verificar se a quantide de números sorteados supera a quantiade de números diferentes do intervalo
+        alert('Quantidade é superior ao intervalo definido');
+        return;
+    }
+    
    let sorteados = [];
    let numero;
 
