@@ -3,6 +3,10 @@ function sortear() {
     let doNumero = parseInt(document.getElementById('de').value);
     let ateNumero = parseInt(document.getElementById('ate').value);
 
+    if ( doNumero >= ateNumero){        //verifica se o intervalor é válido
+        alert('Insira um intervalo');
+        return; //não retorna nada, mas tem o papel de interromper a função nesse ponto
+    }
    let sorteados = [];
    let numero;
 
